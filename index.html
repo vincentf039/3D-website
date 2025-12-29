@@ -1,0 +1,38 @@
+<style>
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.banner .content .title {
+    font-family: 'Hallowed Grounds';
+    font-size: 9em;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(http://plugin.local/wp-content/uploads/2025/12/bg-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(http://plugin.local/wp-content/uploads/2025/12/ink_lv2.gif);
+    mask-size: cover;
+    mask-position: center;
+}
+</style>
+
+<div class="banner">
+  <div class="content">
+    <div class="title">Vincent DEV</div>
+    <p>Subscribe to see more</p>
+  </div>
+</div>
